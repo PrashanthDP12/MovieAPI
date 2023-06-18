@@ -24,6 +24,7 @@ public class ReviewService {
 //            .matching(Criteria.where("imdbId").is(imdbId))
 //            .apply(new Update().push("reviews").value(review))
 //            .first();
+        
         mongoTemplate.updateMulti(
                 new Query(Criteria.where("imdbId").is(imdbId)),
                 new Update().push("reviews", review),
