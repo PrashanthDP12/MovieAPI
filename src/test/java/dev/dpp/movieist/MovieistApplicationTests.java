@@ -1,4 +1,4 @@
-package dev.farhan.movieist;
+package dev.dpp.movieist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
